@@ -10,7 +10,7 @@ $desc_2 = get_field( 'desc_store_2', 'option' );
 $link_2 = get_field( 'link_book_store_2', 'option' );
 ?>
 <div id="popup-booking" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-[2000]">
-  <div class="bg-[#eff0e2] rounded-2xl px-4 lg:px-6 py-8 max-w-[600px] w-full relative">
+  <div class="bg-[#efcec9] rounded-2xl px-4 lg:px-6 py-8 max-w-[600px] w-full relative">
     <button id="closePopup" class="close-popup"><?= Flux\Icon::output( 'close' ) ?></button>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div class="flex flex-col items-center text-center">

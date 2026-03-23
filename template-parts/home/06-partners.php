@@ -19,7 +19,7 @@ if ( empty( $partners ) ) {
                 $delay = $index * 0.3;
                 ?>
                 <?php if ( ! empty( $image) ) : ?>
-                    <div class="w-full h-full aspect-square flex items-center justify-center border-solid border-[1px] border-[#eff0e2] overflow-hidden  wow animate__animated animate__fadeInUp" data-wow-delay="<?= esc_attr( $delay . 's' ); ?>">
+                    <div class="w-full h-full aspect-square flex items-center justify-center border-solid border-[1px] border-[#efcec9] overflow-hidden  wow animate__animated animate__fadeInUp" data-wow-delay="<?= esc_attr( $delay . 's' ); ?>">
                         <img src="<?= esc_url( $image ) ?>" alt="<?= nl2br( esc_html( $title ) ); ?>"
                         loading="lazy" class="block max-w-[112px] xl:max-w-[173px]" width="" height="">
                     </div>

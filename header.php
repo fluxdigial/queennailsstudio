@@ -36,7 +36,7 @@
  $event_url = get_field( 'event_url', 'option' );
 ?>
 
-<header class="header bg-[#eff0e2] sticky top-0 z-[999] w-full">
+<header class="header bg-[#efcec9] sticky top-0 z-[999] w-full">
     <div class="container">
         <div class="header__wrapper">
             <div class="header__menu header__left lg:flex items-center gap-6">

@@ -26,7 +26,7 @@ $slider_options = [
 	],
 ];
 ?>
-<section class="services bg-[#eff0e2] py-12 md:py-14 xl:py-20 overflow-hidden">
+<section class="services bg-[#efcec9] py-12 md:py-14 xl:py-20 overflow-hidden">
     <div class="relative">
         <div class="container">
             <div class="services__title  wow animate__animated animate__fadeInUp">

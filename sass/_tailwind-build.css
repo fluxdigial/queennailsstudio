@@ -526,9 +526,14 @@
   border-color: rgb(224 224 224 / var(--tw-border-opacity, 1))
 }
 
-.border-\[\#eff0e2\] {
+.border-\[\#efcec9\] {
   --tw-border-opacity: 1;
-  border-color: rgb(239 240 226 / var(--tw-border-opacity, 1))
+  border-color: rgb(239 206 201 / var(--tw-border-opacity, 1))
+}
+
+.border-\[\#911439\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(145 20 57 / var(--tw-border-opacity, 1))
 }
 
 .bg-\[\#4199f11A\] {
@@ -560,9 +565,9 @@
   background-color: rgb(243 246 247 / var(--tw-bg-opacity, 1))
 }
 
-.bg-\[\#eff0e2\] {
+.bg-\[\#efcec9\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 240 226 / var(--tw-bg-opacity, 1))
+  background-color: rgb(239 206 201 / var(--tw-bg-opacity, 1))
 }
 
 .bg-black\/60 {
@@ -585,6 +590,16 @@
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+}
+
+.bg-\[\#911439\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 20 57 / var(--tw-bg-opacity, 1))
+}
+
+.bg-\[\#202031\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 49 / var(--tw-bg-opacity, 1))
 }
 
 .object-cover {
@@ -660,6 +675,16 @@
 .py-\[72px\] {
   padding-top: 72px;
   padding-bottom: 72px
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem
 }
 
 .pb-12 {
@@ -880,6 +905,11 @@
   color: rgb(255 255 255 / var(--tw-text-opacity, 1))
 }
 
+.text-\[\#911439\] {
+  --tw-text-opacity: 1;
+  color: rgb(145 20 57 / var(--tw-text-opacity, 1))
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -946,6 +976,11 @@
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
 }
 
+.hover\:bg-\[\#911439\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 20 57 / var(--tw-bg-opacity, 1))
+}
+
 .hover\:text-\[\#8b5e3c\]:hover {
   --tw-text-opacity: 1;
   color: rgb(139 94 60 / var(--tw-text-opacity, 1))
@@ -969,6 +1004,11 @@
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+}
+
+.hover\:text-\[\#911439\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(145 20 57 / var(--tw-text-opacity, 1))
 }
 
 .hover\:no-underline:hover {
@@ -1024,6 +1064,11 @@
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem
+  }
+
+  .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem
   }
 
   .md\:pb-14 {
@@ -1210,6 +1255,11 @@
     padding-bottom: 96px
   }
 
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem
+  }
+
   .lg\:pl-10 {
     padding-left: 2.5rem
   }
@@ -1269,6 +1319,10 @@
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem
+  }
+
+  .lg\:text-\[15px\] {
+    font-size: 15px
   }
 }
 

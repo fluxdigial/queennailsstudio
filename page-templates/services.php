@@ -23,7 +23,7 @@ if (empty($serivces))
         $services_item = $item['services_item'];
         $service_addon = $item['service_addon'];
     ?>
-        <div id="" class="service__section bg-[#eff0e2] p-6 rounded-lg mt-8 first:mt-0">
+        <div id="" class="service__section bg-[#efcec9] p-6 rounded-lg mt-8 first:mt-0">
             <h2 class="service__title text-[20px] md:text-[24px] font-bold text-center mb-6">
                 <?= esc_html($service_title); ?>
             </h2>

@@ -32,7 +32,7 @@ if ( empty( $intro_items ) ) {
                         <?php endif; ?>
                         <?php if ( ! empty($link )) : ?>
                             <div class="intro__btn flex justify-start">
-                            <a href="<?= esc_url($link) ?>" class="text-center px-6 py-3 flex items-center justify-center w-[180px] text-[18px] text-white border-solid border-[1px]  border-[#D2B48C] rounded-[30px] bg-[#D2B48C] font-bold hover:no-underline " title="Button <?= $index + 1 ?>" >
+                            <a href="<?= esc_url($link) ?>" class="text-center px-6 py-3 flex items-center justify-center w-[180px] text-[18px] text-white border-solid border-[1px]  border-[#911439] rounded-[30px] bg-[#911439] font-medium hover:no-underline " title="Button <?= $index + 1 ?>" >
                                 <?= esc_html( $button ); ?>
                             </a>
                             </div>

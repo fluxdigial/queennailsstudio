@@ -6,7 +6,7 @@ if ( empty( $image ) ) {
 	return;
 }
 ?>
-<section class="fultue py-12 md:py-14 xl:py-16 bg-[#eff0e2] overflow-hidden" >
+<section class="fultue py-12 md:py-14 xl:py-16 bg-[#efcec9] overflow-hidden" >
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div class="fultue__image wow animate__animated animate__fadeInUp">
