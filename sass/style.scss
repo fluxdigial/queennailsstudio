@@ -1,0 +1,18 @@
+/*!
+ * Theme Name: QueenNailsStudio Theme
+ * Theme URI:    https://fluxdigital.vn/
+ * Author:       FluxDigital
+ * Author URI:   https://fluxdigital.vn/
+ * Description:  Một sản phẩm của FluxDigital.
+ * Version:      1.0.0
+ */
+
+ @use "base/bamboo";
+ @use "tailwind-build";
+
+ @use "base/element";
+ @use "components/header";
+ @use "components/footer";
+ @use "components/menu";
+ @use "components/menu-mobile";
+ @use "components/layout";

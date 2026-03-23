@@ -1,0 +1,42 @@
+.banner{
+	background-color: transparent;
+	background-image: linear-gradient(180deg, #eff0e2 0%, #FFFFFF 80%);
+}
+
+.service{
+	&__item{
+		&--list{
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			border-bottom: 1px dotted transparent;
+			margin-bottom: 8px;
+			position: relative;
+		}
+		.dots{
+			flex: 1;
+			border-bottom: 1px dotted #999;
+			margin: 0 10px;
+			height: 1em;
+		}
+	}
+	&__addon{
+		&-name{
+			max-width: 70%;
+		}
+		.dots{
+			flex: 1;
+			border-bottom: 1px dotted #999;
+			margin: 0 10px;
+			height: 1em;
+		}
+		&--list{
+			display: flex;
+			align-items: baseline;
+			justify-content: space-between;
+			border-bottom: 1px dotted transparent;
+			margin-bottom: 8px;
+			position: relative;
+		}
+	}
+}

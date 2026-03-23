@@ -1,0 +1,263 @@
+.group img{
+	transition: 0.3s;
+}
+.group:hover img{
+	transform: scale(1.1);
+}
+.banners{
+	&__item{
+		&::before{
+			content: '';
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(34, 32, 35, 0.5) 0%, rgba(34, 32, 35, 0) 23.38%);
+			position: absolute;
+			z-index: 5;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__content{
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		&--heading{
+			font-family: var(--b-font-heading);
+		}
+		&--desc{
+			font-family: var(--b-font-main);
+		}
+	}
+	&__image{
+		display: block;
+		width: 100%;
+		height: calc(100vh - 120px);
+		object-fit: cover;
+    }
+	&__image_mb {
+		width: 100%;
+		height: calc(100vh - 120px);
+		object-fit: cover;
+	}
+}
+
+.intro{
+	background-color: transparent;
+	background-image: linear-gradient(180deg, #eff0e2 0%, #FFFFFF 80%);
+	&__item{
+		&--right{
+			@media (min-width:1024px) {
+				flex-direction: row-reverse!important;
+			}
+			.intro__item--info{
+				@media (min-width:1024px) {
+					text-align: left!important;
+				}
+			}
+			.intro__item--content{
+				@media (min-width:1024px) {
+					padding-left: 32px!important;
+					padding-right: 0!important;
+				}
+				.intro__title {
+					@media (min-width:1024px) {
+						text-align: right!important;
+					}
+				}
+				.intro__desc{
+					@media (min-width:1024px) {
+						text-align: right!important;
+					}
+				}
+				.intro__btn{
+					@media (min-width:1024px) {
+						justify-content: end!important;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes beautium_clip_right {
+	0% {
+		clip-path: inset(0 100% 0 0);
+		-webkit-clip-path: inset(0 100% 0 0);
+	}
+	100% {
+		clip-path: inset(0 0 0 0);
+		-webkit-clip-path: inset(0 0 0 0);
+	}
+}
+.services{
+	&__item{
+		h3{
+			font-family: var(--b-font-heading);
+		}
+		&--card{
+			position: absolute;
+			transition: opacity 0.5s, transform 0.5s;
+   			opacity: 0;
+			overflow: hidden;
+   			z-index: 3;
+			left: 32px;
+			right: 32px;
+			top: 32px;
+			bottom: 32px;
+			background-image: url('http://localhost/queennailsstudio/wp-content/uploads/2025/10/Rebel-Nails-Studilo.png');
+			background-size: 86px;
+    		background-repeat: no-repeat;
+			background-position: right 16px bottom 16px;
+			.title{
+				font-family: var(--b-font-heading);
+			}
+		}
+		&:hover{
+			.services__item--card{
+				opacity: 1;
+				-webkit-animation: beautium_clip_right .3s ease-in;
+				-o-animation: beautium_clip_right .3s ease-in;
+				animation: beautium_clip_right .3s ease-in;
+			}
+		}
+	}
+	.arrow__pagination{
+		margin-top: 24px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 12px;
+		@media (min-width: 1024px) {
+			position: absolute;
+			right: 64px;
+			top: calc(55px / 4);
+			right: 32px;
+			margin-top: 0;
+		}
+		@media (min-width: 1440px) {
+			top: calc(55px / 4);
+			right: 64px;
+		}
+		button{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background:transparent;
+			cursor: pointer;
+			svg{
+				width: 24px;
+				height: 24px;
+				fill: var(--color-heading);
+				path{
+					stroke: var(--color-heading);
+				}
+			}
+		}
+	}
+}
+
+.why{
+	&__item{
+		&--title{
+			&.active{
+				color: var(--color-heading)!important;
+			}
+		}
+	}
+}
+
+.testimonial{
+	&__item{
+		&--image{
+			width: 33%;
+		}
+		&--info{
+			svg{
+				width: 32px;
+				height: 26px;
+			}
+		}
+	}
+
+	&__wrap{
+		&.start{
+			.blaze-prev{
+				opacity: 0.4;
+			}
+		}
+		&.end{
+			.blaze-next{
+				opacity: 0.4;
+			}
+		}
+	}
+	.arrow__pagination{
+		margin-top: 48px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 12px;
+		@media (min-width: 1024px) {
+			position: absolute;
+			right: 64px;
+			top: calc(55px / 4);
+			right: 32px;
+			margin-top: 0;
+		}
+		@media (min-width: 1440px) {
+			top: calc(55px / 4);
+			right: 64px;
+		}
+		button{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background:transparent;
+			cursor: pointer;
+			svg{
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
+	.blaze-pagination{
+		margin-top: 24px;
+		padding-bottom: 16px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 12px;
+		button{
+			width: 16px;
+			height: 16px;
+			margin: 0;
+			padding:0;
+			border-radius: 50%;
+			background-color: #ccc; /* màu mặc định */
+			border: none;
+			text-indent: -9999px;
+  			overflow: hidden;
+			cursor: pointer;
+			transition: background-color 0.3s ease, transform 0.3s ease;
+			&.active{
+				background-color: #333; /* màu của chấm đang active */
+  				transform: scale(1.2);
+			}
+			&:hover {
+			background-color: #555;
+			}
+		}
+	}
+}
+
+.news{
+	.post-item{
+		h3{
+			font-family: var(--b-font-main);
+		}
+	}
+}

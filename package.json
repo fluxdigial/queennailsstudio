@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"css": "sass sass:css sass/style.scss:style.css --style=compressed --no-source-map",
+		"watch": "sass sass:css sass/style.scss:style.css --style=compressed --no-source-map --watch",
+		"tw": "tailwindcss -i ./sass/_tailwind.css -o ./sass/_tailwind-build.css --watch",
+		"sync": "browser-sync start --proxy \"localhost/fptschool\" --files \"style.css\" \"css/*.css\"",
+		"start": "npm run watch",
+		"replace": "npm i & node replace.js"
+	},
+	"devDependencies": {
+		"replace-in-file": "^6.3.5",
+		"sass": "^1.49.10",
+		"tailwindcss": "^3.4.14"
+	}
+}

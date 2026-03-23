@@ -1,0 +1,92 @@
+.footer {
+	&__main{
+		svg{
+			fill:#fff;
+		}
+	}
+	&__col{
+		ul.menu{
+			padding-left: 0;
+			margin: 0;
+			list-style: none;
+			li{
+				margin-bottom: 16px;
+				a{
+					color: var(--color-white);
+					font-size: 18px;
+					line-height: 1.5;
+					font-weight: 500;
+					text-decoration: none;
+					text-align: center;
+					display: block;
+					@media (min-width:1024px) {
+						text-align: left;
+        				display: inline-block;
+					}
+					&:hover{
+						text-decoration: none;
+						color:#BA0510;
+					}
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.map{
+		iframe{
+			margin-bottom: 0;
+			border-radius: 20px;
+			overflow: hidden;
+		}
+		.textwidget{
+			margin-top: 16px;
+			ul{
+				display: flex;
+				justify-content: end;
+				gap:20px;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				color:#221914;
+				a{
+					color:#8b5e3c;
+				}
+			}
+
+		}
+	}
+}
+.chat{
+	svg{
+		width: 50px;
+		height: 50px;
+		fill:#8b5e3c;
+	}
+}
+#popup-booking {
+	svg{
+		fill:#000;
+	}
+	h3{
+		font-family: var(--b-font-main);
+	}
+	button{
+		background:transparent;
+		padding:0;
+		margin:0;
+		position: absolute;
+		right: 24px;
+		top: 8px;
+		svg{
+			fill:#000;
+			width: 24px;
+    		height: 24px;
+			    display: block;
+			path{
+				fill:#000;
+			}
+		}
+	}
+}

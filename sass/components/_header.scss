@@ -1,0 +1,150 @@
+body{
+	position: relative;
+
+}
+
+.header{
+	border-bottom:1px solid #FFFFFF3D;
+	&__wrapper{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 0;
+		@media (max-width:1024px) {
+			flex-direction: row-reverse;
+		}
+	}
+	&__logo{
+		max-width: 68px;
+		img{
+			width: 68px;
+			height: auto;
+			display: block;
+			@media (min-width:1024px) {
+				width: inherit;
+			}
+		}
+	}
+	&--lang{
+		svg{
+			width: 24px;
+			height: 24px;
+			fill: none;
+			path{
+				stroke: #221914;
+			}
+		}
+		a{
+			@media (max-width:1024px) {
+				font-size: 24px!important;
+				font-weight: 300;
+				line-height: 1.4;
+			}
+		}
+		.widget_polylang{
+			ul{
+				margin: 0 ;
+				padding: 0;
+				list-style: none;
+				a{
+					color: #221914;
+					text-transform: uppercase;
+					font-size: 16px;
+					line-height: 1.5;
+					font-weight: 300;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&__menu{
+		.nav{
+			@media (max-width:1024px) {
+				display: none!important;
+			}
+		}
+	}
+}
+body.menu-open{
+	.header{
+		opacity: 0;
+	}
+}
+.menu-mobile{
+	transition: 0.5s ease;
+	position: fixed;
+	overflow-y: auto;
+	z-index: 9999;
+	width: 100%;
+	// height: 100vh;
+	left: 0;
+	top:-100vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	align-items: center;
+	&.open{
+		top:0;
+	}
+	&-list{
+		width: 100%;
+		background: #eff0e2;
+	}
+	&-top{
+		padding:12px 16px;
+		border-bottom: 1px solid #FFFFFF3D;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		background: #eff0e2;
+		a{
+			display: block;
+		}
+		img{
+			width:71px;
+			height: auto;
+			display: block;
+		}
+	}
+	&-btn{
+		padding: 24px 20px;
+		width: 100%;
+		text-align: center;
+		display: flex;
+		background: #eff0e2;
+	}
+	.widget_polylang{
+		ul{
+			a{
+				font-size: 24px!important;
+				color: #221914;
+				font-weight: 300;
+				line-height: 1.5;
+			}
+		}
+	}
+	.header--lang{
+		border-bottom: 1px solid #FFFFFF3D;
+		svg{
+			width: 32px;
+			height: 32px;
+			path{
+				stroke: #221914;
+			}
+		}
+	}
+}
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

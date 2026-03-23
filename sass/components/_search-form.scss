@@ -1,0 +1,30 @@
+.search-form {
+	position: relative;
+	max-width: 400px;
+	border-radius: 50px;
+	overflow: hidden;
+
+	input[type="text"] {
+		display: block;
+		padding: 10px 64px 10px 20px;
+		height: 50px;
+		border-radius: 0;
+    min-width: 400px;
+	}
+
+	button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 64px;
+		background: none;
+
+	}
+
+	svg {
+		fill: #4F556A;
+		width: 24px;
+		height: 24px;
+	}
+}

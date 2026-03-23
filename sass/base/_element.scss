@@ -1,0 +1,29 @@
+:focus {
+	box-shadow: none;
+}
+
+body {
+	max-width: none;
+	padding: 0;
+}
+
+html{
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-heading);
+	font-family: var(--b-font-heading);
+}
+
+svg {
+	width: 1em;
+	height: 1em;
+	fill: #221914;
+}
+

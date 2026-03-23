@@ -1,1 +1,1 @@
-# queennailsstudio
+# QueenNailsStudio

@@ -1,0 +1,23 @@
+.social-icons {
+	--size: 16px;
+	--gap: 12px;
+	--padding: 12px;
+	--color: var(--color-heading);
+
+	justify-content: flex-start;
+	gap: 12px;
+
+	a {
+		padding: var(--padding);
+		display: block;
+		border: 1px solid var(--b-line);
+		border-radius: 99px;
+		color: var(--color);
+	}
+
+	svg {
+		display: block;
+		width: var(--size);
+		height: var(--size);
+	}
+}
