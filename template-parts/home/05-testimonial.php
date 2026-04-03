@@ -1,9 +1,7 @@
 <?php
-$title = get_field( 'testimonial_title' );
-$tes   = get_field( 'testimonials' );
-
-$partners_title = get_field( 'partner_title' );
-$partners       = get_field( 'partners' );
+$title      = get_field( 'testimonial_title' );
+$tes        = get_field( 'testimonials' );
+$background = get_field( 'testimonial_background' );
 if( empty( $tes ) ) {
 	return;
 }
@@ -26,7 +24,7 @@ $slider_options = [
 				</h2>
 			<?php endif; ?>
 		</div>
-		<div class="testimonial__wrap bg-white w-full slider py-10 mt-10" data-options="<?= esc_attr( wp_json_encode( $slider_options ) ) ?>">
+		<div class="testimonial__wrap bg-white w-full slider py-10 mt-10" style="background-image: url('<?php echo esc_url( $background ); ?>');background-size: contain;  background-position: bottom left; background-repeat: no-repeat;" data-options="<?= esc_attr( wp_json_encode( $slider_options ) ) ?>">
 			<div class="blaze-track-container">
 				<div class="blaze-track">
 					<?php
@@ -36,7 +34,6 @@ $slider_options = [
 						$content = !empty( $items['content'] ) ? $items['content'] : '';
 						?>
 						<div class="testimonial__item text-center">
-
 							<div class="testimonial__item--info px-4 lg:px-0 max-w-full lg:max-w-[60%] mx-auto w-full flex flex-col justify-between">
 								<?php if( !empty( $content ) ): ?>
 									<div class="mb-0 mt-5 lg:mt-6 text-base lg:text-[18px] font-medium leading-[1.5]">

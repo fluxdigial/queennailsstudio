@@ -283,6 +283,11 @@
   width: 100%
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content
+}
+
 .min-w-0 {
   min-width: 0px
 }
@@ -301,6 +306,10 @@
 
 .max-w-full {
   max-width: 100%
+}
+
+.max-w-\[65\%\] {
+  max-width: 65%
 }
 
 .flex-1 {
@@ -325,6 +334,10 @@
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr))
 }
 
 .flex-col {
@@ -375,6 +388,10 @@
   gap: 3rem
 }
 
+.gap-16 {
+  gap: 4rem
+}
+
 .gap-2 {
   gap: 0.5rem
 }
@@ -397,6 +414,10 @@
 
 .gap-8 {
   gap: 2rem
+}
+
+.gap-10 {
+  gap: 2.5rem
 }
 
 .gap-x-10 {
@@ -497,6 +518,31 @@
 .rounded-t-\[40\%\] {
   border-top-left-radius: 40%;
   border-top-right-radius: 40%
+}
+
+.rounded-t-\[100px\] {
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px
+}
+
+.rounded-b-\[20px\] {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px
+}
+
+.rounded-t-\[1000px\] {
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px
+}
+
+.rounded-b-\[1000px\] {
+  border-bottom-right-radius: 1000px;
+  border-bottom-left-radius: 1000px
+}
+
+.rounded-b-\[100px\] {
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px
 }
 
 .border {
@@ -836,6 +882,10 @@
   font-size: 40px
 }
 
+.text-\[64px\] {
+  font-size: 64px
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem
@@ -844,6 +894,10 @@
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem
+}
+
+.text-\[50px\] {
+  font-size: 50px
 }
 
 .font-black {
@@ -1271,6 +1325,10 @@
 
   .lg\:max-w-\[80\%\] {
     max-width: 80%
+  }
+
+  .lg\:max-w-\[65\%\] {
+    max-width: 65%
   }
 
   .lg\:grid-cols-2 {

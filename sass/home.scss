@@ -42,6 +42,16 @@
 	}
 }
 
+.banner{
+    &__title{
+        h2{
+            span{
+                color:#911439;
+            }
+        }
+    }
+}
+
 .about{
     &__title{
         span{
