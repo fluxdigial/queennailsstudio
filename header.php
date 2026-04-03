@@ -78,7 +78,7 @@
                 ] );
                 ?>
                 <a href="<?= esc_url( $contact_en ); ?>"
-                class="btn-call px-6 py-3 text-[#221914] rounded border-solid border-[1px] border-[#221914] bg-transparent hover:text-white hover:bg-[#221914] text-[14px] lg:text-[18px] font-medium hover:no-underline"
+                class="btn-call px-6 py-3 text-white rounded-[30px] border-solid border-[1px] border-[#911439] bg-[#911439] hover:text-[#911439] hover:bg-transparent text-[14px] lg:text-[18px] font-medium hover:no-underline"
                 aria-label="Book Now" title="Book Now">
                     <?= esc_html( 'Book Now' ); ?>
                 </a>

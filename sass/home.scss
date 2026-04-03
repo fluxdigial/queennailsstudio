@@ -42,9 +42,38 @@
 	}
 }
 
+.about{
+    &__title{
+        span{
+             font-family: "Over the Rainbow", cursive;
+        }
+        .title{
+
+            @media (min-width:1024px) {
+                top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &__wrap{
+        &--image{
+            &:before{
+                content: '';
+                background: #fff;
+                width: 100%;
+                height: 90%;
+                position: absolute;
+                z-index: -1;
+                bottom: 0;
+            }
+        }
+    }
+}
+
 .intro{
-	background-color: transparent;
-	background-image: linear-gradient(180deg, #efcec9 0%, #FFFFFF 80%);
+	// background-color: transparent;
+	// background-image: linear-gradient(180deg, #efcec9 0%, #FFFFFF 80%);
 	&__item{
 		&--right{
 			@media (min-width:1024px) {
@@ -94,7 +123,14 @@
 		h3{
 			font-family: var(--b-font-heading);
 		}
-		&--card{
+        &--around{
+            top: -32px;
+            left: -32px;
+            height: 100%;
+            width: 100%;
+        }
+		&--image{
+            .card{
 			position: absolute;
 			transition: opacity 0.5s, transform 0.5s;
    			opacity: 0;
@@ -104,25 +140,27 @@
 			right: 32px;
 			top: 32px;
 			bottom: 32px;
-			background-image: url('http://localhost/queennailsstudio/wp-content/uploads/2025/10/Rebel-Nails-Studilo.png');
+			background-image: url('http://localhost/queennailsstudio/wp-content/uploads/2026/03/Logo_Queen_Nail.png');
 			background-size: 86px;
     		background-repeat: no-repeat;
 			background-position: right 16px bottom 16px;
-			.title{
-				font-family: var(--b-font-heading);
-			}
-		}
-		&:hover{
-			.services__item--card{
-				opacity: 1;
-				-webkit-animation: beautium_clip_right .3s ease-in;
-				-o-animation: beautium_clip_right .3s ease-in;
-				animation: beautium_clip_right .3s ease-in;
-			}
-		}
+                .title{
+                    font-family: var(--b-font-heading);
+                }
+            }
+            &:hover{
+                .card{
+                    opacity: 1;
+                    -webkit-animation: beautium_clip_right .3s ease-in;
+                    -o-animation: beautium_clip_right .3s ease-in;
+                    animation: beautium_clip_right .3s ease-in;
+                }
+            }
+        }
+
 	}
 	.arrow__pagination{
-		margin-top: 24px;
+		margin-top: 0px;
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -130,13 +168,13 @@
 		@media (min-width: 1024px) {
 			position: absolute;
 			right: 64px;
-			top: calc(55px / 4);
+			top: 5px;
 			right: 32px;
 			margin-top: 0;
 		}
 		@media (min-width: 1440px) {
-			top: calc(55px / 4);
-			right: 64px;
+			top: 8px;
+			right: 120px;
 		}
 		button{
 			width: 40px;
@@ -144,14 +182,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background:transparent;
+			background:#911437;
 			cursor: pointer;
 			svg{
 				width: 24px;
 				height: 24px;
-				fill: var(--color-heading);
+				fill: #fff;
 				path{
-					stroke: var(--color-heading);
+					stroke: #fff;
 				}
 			}
 		}
@@ -177,6 +215,10 @@
 			svg{
 				width: 32px;
 				height: 26px;
+                fill:#c9727a;
+                path{
+                    fill:#c9727a;
+                }
 			}
 		}
 	}
@@ -237,18 +279,18 @@
 			margin: 0;
 			padding:0;
 			border-radius: 50%;
-			background-color: #ccc; /* màu mặc định */
+			background-color: #faefed; /* màu mặc định */
 			border: none;
 			text-indent: -9999px;
   			overflow: hidden;
 			cursor: pointer;
 			transition: background-color 0.3s ease, transform 0.3s ease;
 			&.active{
-				background-color: #333; /* màu của chấm đang active */
+				background-color: #c9727a; /* màu của chấm đang active */
   				transform: scale(1.2);
 			}
 			&:hover {
-			background-color: #555;
+			background-color: #c9727a;
 			}
 		}
 	}

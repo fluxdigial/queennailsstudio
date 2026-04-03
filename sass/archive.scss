@@ -54,11 +54,12 @@
 				width: 100%;
 				@media(min-width: 768px) {
 					width: calc(50% - 30px);
+                            flex: 1;
 				}
 			}
 			&:nth-child(4) {
 				@media(min-width: 768px) {
-					border-top: 1px solid #EFEFEF;
+					border-top: 1px solid #8c215526;
 					padding-top: 40px;
 				}
 			}
