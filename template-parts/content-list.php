@@ -9,7 +9,7 @@ $categories = get_the_category( $post->ID );
 	</div>
 	<div class="entry-content w-full md:w-3/5 md:pl-4 lg:pl-6 xl:pl-8 mt-5 md:mt-0">
 		<h3 class="text-[20px] leading-tight font-bold text-heading my-0">
-			<a href="<?php the_permalink(); ?>" class="line-clamp-2 hover:no-underline text-heading hover:text-[#8c2155]">
+			<a href="<?php the_permalink(); ?>" class="line-clamp-2 hover:no-underline text-heading hover:text-[#911439]">
 				<?php the_title(); ?>
 			</a>
 		</h3>
@@ -18,7 +18,7 @@ $categories = get_the_category( $post->ID );
 				<?= Flux\Icon::output( 'time' ); ?>
 				<?= get_the_date( 'd-m-Y' ); ?>
 			</p>
-			<a href="<?= get_category_link( $categories[0]->term_id ) ?>" class="see-more text-primary text-base font-medium hover:no-underline hover:text-[#8c2155]">
+			<a href="<?= get_category_link( $categories[0]->term_id ) ?>" class="see-more text-primary text-base font-medium hover:no-underline hover:text-[#911439]">
 				<?= esc_html( $categories[0]->cat_name ); ?>
 			</a>
 		</div>

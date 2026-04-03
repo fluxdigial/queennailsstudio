@@ -24,8 +24,8 @@ if( empty( $image_1 ) && empty( $image_2 ) && empty( $image_3 ) ) {
 							$btn_link  = !empty( $items['link'] ) ? esc_url( $items['link'] ) : '';
 							$is_even   = $index % 2 === 0;
 							$btn_class = $is_even
-								? 'text-white bg-[#911439] hover:text-[#911439] hover:bg-white'
-								: 'text-[#911439] bg-white hover:text-white hover:bg-[#911439]';
+								? 'text-white bg-[#911439] hover:text-[#911439] hover:bg-transparent'
+								: 'text-[#911439] bg-transparent hover:text-white hover:bg-[#911439]';
 							if( $btn_link ):
 								?>
 								<a href="<?= $btn_link ?>" target="_blank" class="flex w-fit justify-center items-center border-solid border-[1px] border-[#911439] rounded-[30px] px-6 py-3 xl:min-w-[160px] text-[18px] font-medium hover:no-underline <?= $btn_class ?>" title="Slider Button <?= $index + 1 ?>" data-wow-delay="<?= 0.3 + ( $index + 1 ) * 0.3 ?>s">

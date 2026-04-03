@@ -32,8 +32,8 @@ if( empty( $content ) ) {
 							$btn_link  = !empty( $items['intro_link'] ) ? esc_url( $items['intro_link'] ) : '';
 							$is_even   = $index % 2 === 0;
 							$btn_class = $is_even
-								? 'text-white bg-[#911439] hover:text-[#911439] hover:bg-white'
-								: 'text-[#911439] bg-white hover:text-white hover:bg-[#911439]';
+								? 'text-white bg-[#911439] hover:text-[#911439] hover:bg-transparent'
+								: 'text-[#911439] bg-transparent hover:text-white hover:bg-[#911439]';
 							?>
 							<?php if( $btn_link ): ?>
 								<a href="<?= $btn_link ?>" target="_blank" class="flex justify-center items-center border-solid border-[1px] border-[#911439] inline-block rounded-[30px] px-6 py-3 xl:min-w-[160px] text-[18px] font-medium hover:no-underline <?= $btn_class ?>" title="Slider Button <?= $index + 1 ?>" data-wow-delay="<?= 0.3 + ( $index + 1 ) * 0.3 ?>s">
