@@ -50,7 +50,7 @@ $slider_options = [
 							<?php if( $link ): ?>
 								<a href="<?= esc_url( $link ); ?>" class="block" target="_blank">
 								<?php endif; ?>
-								<div class=" mb-8 ml-8 mt-8 relative aspect-[480/650] bg-[#efcec9]">
+								<div class=" mb-8 ml-8 mt-8 relative aspect-[480/650] bg-[#fbf4f1]">
 									<?php if( !empty( $image ) ): ?>
 										<div class="services__item--around absolute">
 											<div class="services__item--image overflow-hidden relative">

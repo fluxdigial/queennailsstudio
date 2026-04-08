@@ -15,7 +15,7 @@ $slider_options = [
 	],
 ];
 ?>
-<section class="testimonial bg-[#efcec9] py-12 md:py-14 xl:py-20 overflow-hidden ">
+<section class="testimonial bg-[#fbf4f1] py-12 md:py-14 xl:py-20 overflow-hidden ">
 	<div class="container relative">
 		<div class="testimonial__title w-full ">
 			<?php if( !empty( $title ) ): ?>
@@ -33,7 +33,7 @@ $slider_options = [
 						$name    = !empty( $items['name'] ) ? $items['name'] : '';
 						$content = !empty( $items['content'] ) ? $items['content'] : '';
 						?>
-						<div class="testimonial__item text-center">
+						<div class="testimonial__item my-auto text-center">
 							<div class="testimonial__item--info px-4 lg:px-0 max-w-full lg:max-w-[60%] mx-auto w-full flex flex-col justify-between">
 								<?php if( !empty( $content ) ): ?>
 									<div class="mb-0 mt-5 lg:mt-6 text-base lg:text-[18px] font-medium leading-[1.5]">

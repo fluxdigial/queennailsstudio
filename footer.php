@@ -6,9 +6,9 @@ $link_map    = get_field( 'link_map', 'option' );
 $phone       = get_field( 'phone', 'option' );
 $email       = get_field( 'email', 'option' );
 ?>
-<?php get_template_part( 'template-parts/popup-booking' ); ?>
+<!-- < ?php get_template_part( 'template-parts/popup-booking' ); ?> -->
 <footer class="footer">
-	<div class="bg-[#efcec9] py-10 md:py-12 lg:py-14">
+	<div class="bg-[#fbf4f1] py-10 md:py-12 lg:py-14">
 		<div class="container">
 			<div class="footer__main flex flex-wrap items-start">
 				<div class="w-full  lg:w-25 pr-0 lg:pr-5">
@@ -44,15 +44,61 @@ $email       = get_field( 'email', 'option' );
 						<h3 class="text-heading font-bold text-[18px]  my-0">
 							<?php echo esc_html( 'Business Hours' ); ?>
 						</h3>
+						<?php
+						$monday    = get_field( 'open_mon_sat', 'option' );
+						$tuesday   = get_field( 'open_tuesday', 'option' );
+						$wednesday = get_field( 'open_wednesday', 'option' );
+						$thursday  = get_field( 'open_thursday', 'option' );
+						$friday    = get_field( 'open_friday', 'option' );
+						$saturday  = get_field( 'open_saturday', 'option' );
+						$sunday    = get_field( 'open_sunday', 'option' );
+						?>
 						<ul class="list-none p-0 mt-6 m-0 grid grid-cols-1 gap-2">
-							<li class="flex flex-wrap gap-2 items-center">
-								<span class="text-[16px] font-bold">Mon - Sat:</span>
-								<p class="text-[14px] m-0 p-0"><?php echo the_field( 'open_mon_sat', 'option' ); ?></p>
-							</li>
-							<li class="flex flex-wrap gap-2 items-center">
-								<span class="text-[16px] font-bold">Sunday:</span>
-								<p class="text-[14px] m-0 p-0"> <?php echo the_field( 'open_sunday', 'option' ); ?></p>
-							</li>
+							<?php if( !empty( $monday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Monday:</span>
+									<p class="text-[14px] m-0 p-0"><?php echo esc_html( $monday ); ?></p>
+								</li>
+							<?php endif; ?>
+							<?php if( !empty( $tuesday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Tuesday:</span>
+									<p class="text-[14px] m-0 p-0"> <?php echo esc_html( $tuesday ); ?></p>
+								</li>
+							<?php endif; ?>
+							<?php if( !empty( $wednesday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Wednesday:</span>
+									<p class="text-[14px] m-0 p-0"> <?php echo esc_html( $wednesday ); ?></p>
+								</li>
+							<?php endif; ?>
+							<?php if( !empty( $thursday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Thursday:</span>
+									<p class="text-[14px] m-0 p-0"> <?php echo esc_html( $thursday ); ?></p>
+								</li>
+							<?php endif; ?>
+							<?php if( !empty( $friday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Friday:</span>
+									<p class="text-[14px] m-0 p-0"> <?php echo esc_html( $friday ); ?></p>
+								</li>
+							<?php endif; ?>
+							<?php if( !empty( $saturday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Saturday:</span>
+									<p class="text-[14px] m-0 p-0"> <?php echo esc_html( $saturday ); ?></p>
+								</li>
+							<?php endif; ?>
+
+							<?php if( !empty( $sunday ) ): ?>
+								<li class="flex flex-wrap gap-2 items-center">
+									<span class="text-[16px] font-bold">Sunday:</span>
+									<p class="text-[14px] m-0 p-0">
+										<?php echo esc_html( $sunday ); ?>
+									</p>
+								</li>
+							<?php endif; ?>
 						</ul>
 					</div>
 
@@ -91,28 +137,19 @@ $email       = get_field( 'email', 'option' );
 			</div>
 		</div>
 	</div>
-	<div class="footer__copyright bg-[#202031] py-4">
-		<div class="container text-white flex flex-wrap justify-center text-center text-[12px] lg:text-[15px] gap-x-2 gap-y-1">
+	<div class="footer__copyright bg-[#efcec9] py-4">
+		<div class="container text-[#333] flex flex-wrap justify-center text-center text-[12px] lg:text-[15px] gap-x-2 gap-y-1">
 			<?= wp_kses_post(
 				sprintf(
 					__( '© %d %s. All rights reserved. <span class="whitespace-nowrap">Developed by %s</span>.', 'flux' ),
 					gmdate( 'Y' ),
 					get_bloginfo( 'name' ),
-					'<a href="https://fluxdigital.vn/" target="_blank" class="text-white inline">Flux Digital</a>'
+					'<a href="https://fluxdigital.vn/" target="_blank" class="text-[#333] inline">Flux Digital</a>'
 				)
 			); ?>
 		</div>
 	</div>
 </footer>
-<?php
-$button_contact = get_field( 'button_contact', 'option' );
-if( !empty( $button_contact ) ): ?>
-	<div class="chat fixed bottom-4 right-4 lg:bottom-16 lg:right-10">
-		<a target="_blank" href="<?php echo esc_url( $button_contact ); ?>">
-			<?= Flux\Icon::output( 'inbox' ); ?>
-		</a>
-	</div>
-<?php endif; ?>
 <?php wp_footer(); ?>
 
 </body>

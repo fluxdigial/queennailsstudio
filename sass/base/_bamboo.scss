@@ -38,6 +38,7 @@ html:focus-within {
 }
 html{
 	margin: 0 !important;
+    scroll-behavior: smooth;
 }
 body {
 	max-width: 70ch;

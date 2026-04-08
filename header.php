@@ -31,12 +31,12 @@
 
 <body <?php body_class() ?>>
 	<?php wp_body_open();
-	$contact_en  = get_field( 'button_contact', 'option' );
-	$event_image = get_field( 'event_image', 'option' );
-	$event_url   = get_field( 'event_url', 'option' );
+	$book_now_header = get_field( 'book_now_header', 'option' );
+	$event_image     = get_field( 'event_image', 'option' );
+	$event_url       = get_field( 'event_url', 'option' );
 	?>
 
-	<header class="header bg-[#efcec9] sticky top-0 z-[999] w-full">
+	<header class="header bg-[#fbf4f1] sticky top-0 z-[999] w-full">
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__menu header__left lg:flex items-center gap-6">
@@ -76,7 +76,7 @@
 						'theme_location'  => 'right',
 					] );
 					?>
-					<a href="<?= esc_url( $contact_en ); ?>" class="btn-call px-6 py-3 text-white rounded-[30px] border-solid border-[1px] border-[#911439] bg-[#911439] hover:text-[#911439] hover:bg-transparent text-[14px] lg:text-[18px] font-medium hover:no-underline" aria-label="Book Now" title="Book Now">
+					<a href="<?= esc_url( $book_now_header ); ?>" target="_blank" class="btn-call px-6 py-3 text-white rounded-[30px] border-solid border-[1px] border-[#911439] bg-[#911439] hover:text-[#911439] hover:bg-transparent text-[14px] lg:text-[18px] font-medium hover:no-underline" aria-label="Book Now" title="Book Now">
 						<?= esc_html( 'Book Now' ); ?>
 					</a>
 				</div>
@@ -102,7 +102,7 @@
 			?>
 		</div>
 		<div class="menu-mobile-btn">
-			<a href="<?= esc_url( $contact_en ); ?>" class="btn-call w-full px-6 py-3 text-white rounded-[30px] border-solid border-[1px] border-[#911439] bg-[#911439] hover:text-[#911439] hover:bg-transparent text-[14px] lg:text-[18px] font-medium hover:no-underline" aria-label="Book Now" title="Book Now">
+			<a href="<?= esc_url( $book_now_header ); ?>" class="btn-call w-full px-6 py-3 text-white rounded-[30px] border-solid border-[1px] border-[#911439] bg-[#911439] hover:text-[#911439] hover:bg-transparent text-[14px] lg:text-[18px] font-medium hover:no-underline" aria-label="Book Now" title="Book Now">
 				<?= esc_html( 'Book Now' ); ?>
 			</a>
 		</div>

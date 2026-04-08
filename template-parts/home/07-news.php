@@ -19,7 +19,7 @@ if( !$query->have_posts() ) {
 <section class="news py-12 md:py-14 xl:py-20 overflow-hidden">
 	<div class="container">
 		<?php if( !empty( $title ) ): ?>
-			<h2 class="news__title my-0 text-heading text-center text-[32px] lg:text-[48px] font-normal   wow animate__animated animate__fadeInUp">
+			<h2 class="news__title my-0 text-heading text-center text-[32px] lg:text-[48px] font-bold  wow animate__animated animate__fadeInUp">
 				<?php echo $title; ?>
 			</h2>
 		<?php endif; ?>

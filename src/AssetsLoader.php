@@ -23,6 +23,10 @@ class AssetsLoader {
 			$this->enqueue_slider();
 		}
 
+		if( is_page_template( 'page-templates/booking-apointment.php' ) ) {
+			Assets::css( 'booking', false );
+		}
+
 		if( is_page_template( 'page-templates/contact-us.php' ) ) {
 			Assets::css( 'contact-us', true );
 		}

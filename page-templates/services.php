@@ -24,7 +24,7 @@ if( empty( $serivces ) )
 			$service_addon_title = $item['addon_title'];
 			$service_addon       = $item['service_addon'];
 			?>
-			<div id="" class="service__section bg-[#efcec9] p-6 rounded-lg mt-8 first:mt-0">
+			<div id="" class="service__section bg-[#fbf4f1] p-6 rounded-lg mt-8 first:mt-0">
 				<h2 class="service__title text-[20px] md:text-[24px] font-bold text-center mb-6">
 					<?= esc_html( $service_title ); ?>
 				</h2>
@@ -37,14 +37,14 @@ if( empty( $serivces ) )
 				</div>
 				<div class="service__items ">
 					<?php if( !empty( $services_item ) ): ?>
-						<?php foreach( $services_item as $service ):
+						<?php foreach( $services_item as $i => $service ):
 							$item_title          = $service['title'];
 							$item_price_full_set = $service['price_full_set'];
 							$item_price_infill   = $service['price_infill'];
 							$item_price_offrenew = $service['price_offrenew'];
 							$item_content        = $service['content'];
 							?>
-							<div class="service__item border rounded-lg text-left">
+							<div class="service__item border rounded-lg text-left" id="service-item-<?= $index . '-' . $i; ?>">
 								<div class="service__item--list flex justify-space-between items-center">
 									<h3 class="service__item-title text-[16px] md:text-[18px] lg:text-xl font-semibold">
 										<?= esc_html( $item_title ); ?>

@@ -23,7 +23,7 @@ if( empty( $content ) ) {
 					</div>
 				<?php endif; ?>
 			</div>
-			<div class="about__wrap--content relative bg-white md:ml-[10%] p-6 md:p-10">
+			<div class="about__wrap--content relative bg-[#fbf4f1] md:ml-[10%] p-6 md:p-10">
 				<div><?php echo $content; ?></div>
 				<?php if( !empty( $buttons ) ): ?>
 					<div class="buttons__wrap mt-10 flex flex-col lg:flex-row gap-4 justify-end wow animate__animated animate__fadeInUp" aria-label="Slider Button <?= $index + 1 ?>">

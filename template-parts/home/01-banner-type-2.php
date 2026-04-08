@@ -1,11 +1,12 @@
 <?php
+$banners = get_field( 'banners' );
 $title   = get_field( 'banner_type_2_title' );
 $content = get_field( 'banner_type_2_desc' );
 $buttons = get_field( 'banner_type_2_buttons' );
 $image_1 = get_field( 'banner_type_2_image_1' );
 $image_2 = get_field( 'banner_type_2_image_2' );
 $image_3 = get_field( 'banner_type_2_image_3' );
-if( empty( $image_1 ) && empty( $image_2 ) && empty( $image_3 ) ) {
+if( !empty( $banners ) ) {
 	return;
 }
 ?>

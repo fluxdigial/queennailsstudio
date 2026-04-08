@@ -1,5 +1,6 @@
 <?php
-$banners = get_field( 'bannerss' );
+$banners = get_field( 'banners' );
+$title   = get_field( 'banner_type_2_title' );
 // var_dump( $banners );
 if( empty( $banners ) ) {
 	return;
